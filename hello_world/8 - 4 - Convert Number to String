@@ -1,0 +1,16 @@
+8 - 4 - Convert Number to String
+
+My Solution:
+```
+fn number_to_string(i: i32) -> String {
+  i.to_string()
+}
+```
+
+Rust format! (writes to standard output, using a format string)
+https://rustbyexample.com/hello/print/fmt.html
+```
+fn number_to_string(i: i32) -> String {
+  format!("{}",i)
+}
+```

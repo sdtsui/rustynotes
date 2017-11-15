@@ -1,0 +1,36 @@
+Rust Intro:
+
+Systems Programming Language:
+  - Control hardware
+  - access to machine features: OS (layer between user -> application |*| -> hardware), utility software (OS utilities, used to monitor, optimize, or maintain a computer), device drivers (interface for hardware), compilers, linkers (combines multiple sources of machine code into libs/executables)
+
+
+
+Features:
+  It is designed to be a "safe, concurrent, practical language",[11] supporting functional and imperative-procedural paradigms
+  - Memory Safety: protects from buffer overflows and dangling pointers
+    - C/C++ - memory unsafe
+
+Advantages:
+  - Older systems programmers: less time avoiding pitfalls
+  - Newer: faster to prod-ready, lower learning curve
+
+https://news.ycombinator.com/item?id=14081178
+>>>
+The learning curve tends to be pretty rough for the first week or two, but you can reduce that by pairing with a more experienced Rust developer. And after that, it's pretty smooth sailing. Certainly any C++ programmer should be able to make the leap fairly quickly--it helps to have used at least one non-GCed language.
+
+
+Books/Documentation:
+https://doc.rust-lang.org/book/second-edition/ch01-00-introduction.html
+http://www.oreilly.com/programming/free/files/why-rust.pdf
+https://www.rust-lang.org/en-US/faq.html
+
+Comparisons with Other Languages:
+https://www.reddit.com/r/rust/comments/4l44z3/why_should_i_use_rust/
+https://thenewstack.io/safer-future-rust/
+
+
+Rust and NodeJS:
+
+
+Rust Community:

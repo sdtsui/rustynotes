@@ -1,0 +1,57 @@
+8 - 2 - DNA to RNA:
+https://www.codewars.com/kata/5556282156230d0e5e000089/solutions/rust
+
+My Solution:
+```
+fn dna_to_rna(dna: &str) -> String {
+  str::replace(dna, "T", "U")
+}
+```
+
+Oneliner:
+```
+fn dna_to_rna(dna: &str) -> String {
+ dna.replace("T", "U")
+}
+```
+
+Imperative Solution:
+```
+fn dna_to_rna(dna: &str) -> String {
+  let str = dna.chars().map(|item| {
+    if item == 'T' {
+     'U'
+    }else{
+    return item;
+    }
+ }).collect::<String>();
+ str
+}
+```
+
+Mapping Examples:
+1
+```
+fn dna_to_rna(dna: &str) -> String {
+  let mut result = String::new();
+  
+  for c in dna.chars() {
+    let c = match c {
+      'T' => 'U',
+      _   => c
+    };
+  
+    result.push(c);
+  }
+  
+  return result;
+}
+```
+
+```
+fn dna_to_rna(dna: &str) -> String {
+    dna.chars().map(|x: char| {
+        if x == 'T' { 'U' } else { x }
+    }).collect()
+}
+```

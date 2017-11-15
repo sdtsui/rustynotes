@@ -1,0 +1,17 @@
+u16 vs u32 vs i16 vs i32
+
+
+```
+- # bits determines maximum size
+- Adding one bit doubles its capacity
+
+- First column could be positive or negative: "signed magnitude"
+   
+0001 - 1001
+3    -   -3
+
+Adding a signed bit reduces the range of ints that can be covered by half.
+
+Floating point: a decimal can float.
+Review later: http://kipirvine.com/asm/workbook/floating_tut.htm
+```

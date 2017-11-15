@@ -1,0 +1,51 @@
+8 - 3 - Even or Odd:
+
+My Solution:
+```
+fn even_or_odd(i: i32) -> &'static str {
+  if i % 2 == 0 {
+    return "Even";
+  } else {
+    return "Odd";
+  }
+}
+```
+
+
+Match:
+For flow control:
+https://rustbyexample.com/flow_control/match.html
+(default:
+  1 => 'exact match'
+  2 | 3 | 4 => 'or'
+  5..9 => 'range match'
+  _ => else
+)
+
+```
+fn even_or_odd(i: i32) -> &'static str {
+  match i % 2 {
+    0 => "Even",
+    _ => "Odd",
+  }
+}
+```
+
+
+
+
+Return Formats:
+no semicolon
+```
+fn even_or_odd(i: i32) -> &'static str {
+  if i % 2 == 0  { "Even" } else { "Odd" }
+}
+```
+
+explicit return, with semicolon
+
+```
+fn even_or_odd(i: i32) -> &'static str {
+  return if i%2 == 0 { "Even" } else { "Odd" };
+}
+```

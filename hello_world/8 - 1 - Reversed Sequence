@@ -1,0 +1,61 @@
+8 - 1 - Reversed Sequence
+
+// Reversed Sequence
+https://www.codewars.com/kata/5a00e05cc374cb34d100000d/solutions/rust
+
+My Solution:
+```
+fn reverse_seq(n: u32) -> Vec<u32> {
+  let mut v: Vec<u32> = Vec::new(); 
+  let seqMax = n + 1;
+  for i in 1..seqMax {
+    v.push(i);
+  }
+  v.reverse();
+  return v;
+}
+```
+
+
+Functional Style:
+```
+fn reverse_seq(n: u32) -> Vec<u32> {
+    (1..n + 1).rev().collect()
+}
+``
+rev: reverses an iterator
+https://doc.rust-lang.org/std/iter/trait.Iterator.html#method.rev
+collect: 
+https://doc.rust-lang.org/std/iter/trait.Iterator.html#method.collect
+
+For Example:
+```
+fn main() {
+  let x : Vec<u32> = (0..3).rev().collect();
+  println!("{:?}", x);
+}
+```
+
+
+Single-line returns at the end of a function declaration:
+```
+fn reverse_seq(n: u32) -> Vec<u32> {
+  let mut vec : Vec<u32> = Vec::new();
+  for i in (1..n+1).rev() {
+    vec.push(i);
+  }
+  vec
+}
+```
+
+
+On collect...'turbofish' example:
+```
+let a = [1, 2, 3];
+
+let doubled = a.iter()
+               .map(|&x| x * 2)
+               .collect::<Vec<_>>();
+
+assert_eq!(vec![2, 4, 6], doubled);
+```
